@@ -52,6 +52,7 @@ topNav[4].textContent = siteContent["nav"]["nav-item-5"];
 topNav[5].textContent = siteContent["nav"]["nav-item-6"];
 
 let nav = document.querySelector('nav');
+nav.style.color = "green";
 let newLink = document.createElement('a');
 newLink.textContent = "New Link"
 let newerLink = document.createElement('a');
@@ -59,7 +60,10 @@ newerLink.textContent = "Newer Link";
 nav.appendChild(newLink);
 nav.prepend(newerLink);
 
-nav.style.color = "green";
+let navText = document.querySelectorAll('nav a');
+navText.forEach(item => {item.style.color = "green"});
+
+
 
 //Below Nav
 
